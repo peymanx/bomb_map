@@ -1,4 +1,6 @@
 
+# Bomb map
+
 
 ```text
 FLAG VALUE
@@ -15,9 +17,11 @@ BFCR
 
 
 ```
+## Download the game
+[Go to download links](/executable)
 
 
-![preview](./shot.png)
+![preview](./screenshot/shot.png)
 
 
 ```
@@ -25,15 +29,21 @@ BFCR
         Bomb Map, by peymanx
 
         1  2  3  4  5  6  7  8  9
-        1 .  🚩 .  .  .  🚩 .  .  .
+        1 .  .  🚩 .  .  .  .  .  🚩
         2 .  .  .  .  .  .  .  .  .
         3 .  .  .  .  .  .  .  .  .
-        4 .  .  .  .  .  .  🚩 🚩 .
-        5 .  .  .  .  🚩 .  .  .  .
-        6 .  .  .  .  .  .  .  .  🚩
-        7 .  .  .  .  .  🚩 .  .  .
-        8 🚩 .  .  .  .  🚩 .  .  .
-        9 🚩 .  .  .  .  .  .  .  .
+        4 .  .  .  .  .  .  .  .  🚩
+        5 🚩 .  .  .  🚩 .  🚩 .  .
+        6 .  .  .  🚩 .  🚩 .  .  .
+        7 .  .  .  .  .  .  .  .  .
+        8 .  .  .  .  .  .  .  .  .
+        9 🚩 .  .  .  .  .  .  🚩 .
+
+```
+
+### How to make noisy color banner
+```bash
+head -c 300000 /dev/random | convert -depth 8 -size 400x250 rgb:- -scale 10000x10000 noise.png
 
 
 ```
